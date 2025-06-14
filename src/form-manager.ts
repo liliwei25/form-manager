@@ -13,6 +13,7 @@ type FormManagerOptions = {
   onResponsesChange?: (responses: Response) => void
   onErrorsChange?: (errors: Map<string, string[]>) => void
   onProgressChange?: (progress: number) => void
+  onPageChange?: (currentPage: Page) => void
 }
 
 export class FormManager {
@@ -58,6 +59,7 @@ export class FormManager {
     if (nextIndex === -1) return false
 
     this.currentPageIndex = nextIndex
+    this.options.onPageChange?.(this.getCurrentPage())
     return true
   }
 
@@ -68,6 +70,7 @@ export class FormManager {
     if (previousIndex === -1) return false
 
     this.currentPageIndex = previousIndex
+    this.options.onPageChange?.(this.getCurrentPage())
     return true
   }
 
