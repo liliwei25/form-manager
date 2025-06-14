@@ -1,5 +1,5 @@
-import {Question} from '@/types/question';
-import {Conditional} from '@/types/conditional';
+import {Question} from './question';
+import {Conditional} from './conditional';
 
 export interface Page {
   id: string;

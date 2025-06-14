@@ -1,8 +1,10 @@
-import { Conditional } from '@/types/conditional'
+import {Conditional} from 'types/conditional';
 
 export const getConditionalsForPage = (
   conditionals: Conditional[],
-  pageId: string
+  pageId: string,
 ): Conditional[] => {
-  return conditionals.filter((conditional) => conditional.targetPageId === pageId)
-}
+  return conditionals.filter(
+    conditional => conditional.targetPageId === pageId,
+  );
+};

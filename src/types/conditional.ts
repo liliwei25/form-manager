@@ -1,5 +1,5 @@
-import {ConditionalAction} from '@/types/conditional-action';
-import {Condition} from '@/types/condition';
+import {ConditionalAction} from './conditional-action';
+import {Condition} from './condition';
 
 export interface Conditional {
   action: ConditionalAction;

@@ -1,4 +1,4 @@
-import {Question} from '@/types/question';
-import {ResponseValue} from '@/types/response-value';
+import { Question } from './question';
+import { ResponseValue } from './response-value';
 
 export type Response = Record<Question['id'], ResponseValue>;

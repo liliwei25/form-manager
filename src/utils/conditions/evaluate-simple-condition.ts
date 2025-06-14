@@ -1,7 +1,7 @@
-import { ConditionOperator } from '@/types/condition-operator'
-import { SimpleCondition } from '@/types/simple-condition'
-import { Response } from '@/types/response'
-import {BasicResponseValue} from '@/types';
+import { ConditionOperator } from '../../types/condition-operator'
+import { SimpleCondition } from '../../types/simple-condition'
+import { Response } from '../../types/response'
+import { BasicResponseValue } from '../../types/response-value'
 
 export const evaluateSimpleCondition = (
   condition: SimpleCondition,

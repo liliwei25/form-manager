@@ -1,5 +1,5 @@
-import {ConditionOperator} from '@/types/condition-operator';
-import {ResponseValue} from '@/types/response-value';
+import { ConditionOperator } from './condition-operator';
+import { ResponseValue } from './response-value';
 
 export interface SimpleCondition {
   questionId: string;

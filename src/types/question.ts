@@ -1,6 +1,6 @@
-import {QuestionType} from '@/types/question-type';
-import {ResponseValue} from '@/types/response-value';
-import {Validation} from '@/types/validation';
+import { QuestionType } from './question-type';
+import { ResponseValue } from './response-value';
+import { Validation } from './validation';
 
 export interface Question {
   id: string;

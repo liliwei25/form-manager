@@ -1,4 +1,4 @@
-import {SimpleCondition} from '@/types/simple-condition';
-import {LogicalCondition} from '@/types/logical-condition';
+import {LogicalCondition} from './logical-condition';
+import {SimpleCondition} from './simple-condition';
 
 export type Condition = LogicalCondition | SimpleCondition;

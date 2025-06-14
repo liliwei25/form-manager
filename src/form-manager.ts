@@ -1,13 +1,13 @@
-import { Form } from '@/types/form'
-import { Page } from '@/types/page'
-import { Question } from '@/types/question'
-import { Response } from '@/types/response'
-import { ResponseValue } from '@/types/response-value'
-import { ValidationType } from '@/types/validation-type'
+import { Form } from './types/form'
+import { Page } from './types/page'
+import { Question } from './types/question'
+import { Response } from './types/response'
+import { ResponseValue } from './types/response-value'
+import { ValidationType } from './types/validation-type'
 
-import { getAllConditionals } from '@/utils/conditionals/get-all-conditionals'
-import { getConditionalsForPage } from '@/utils/conditionals/get-conditionals-for-page'
-import { evaluateCondition } from '@/utils/conditions/evaluate-condition'
+import { getAllConditionals } from './utils/conditionals/get-all-conditionals'
+import { getConditionalsForPage } from './utils/conditionals/get-conditionals-for-page'
+import { evaluateCondition } from './utils/conditions/evaluate-condition'
 
 type FormManagerOptions = {
   onResponsesChange?: (responses: Response) => void
